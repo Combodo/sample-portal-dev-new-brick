@@ -1,0 +1,17 @@
+{# sample-portal-dev-new-brick/tile.html.twig #}
+{# Image brick tile layout #}
+
+<div class="col-xs-12 col-sm-{{ brick.GetWidth }}">
+	{% block pTileWrapper %}
+		<a href="{{ app.url_generator.generate(brick.GetRouteName, {sBrickId: brick.GetId}) }}{% if app['combodo.portal.instance.routes'][brick.GetRouteName]['hash'] is defined %}#{{ app['combodo.portal.instance.routes'][brick.GetRouteName]['hash'] }}{% endif %}"
+			{% if app['combodo.portal.instance.routes'][brick.GetRouteName]['navigation_menu_attr'] is defined %}{% for key, value in app['combodo.portal.instance.routes'][brick.GetRouteName]['navigation_menu_attr'] %} {{ key }}="{{ value }}"{% endfor %}{% endif %}
+			{% if brick.GetModal %}data-toggle="modal" data-target="#modal-for-all"{% endif %}
+			class="tile{# vertical-center#}"
+			id="brick-{{ brick.GetId }}"
+			data-brick-id="{{ brick.GetId }}">
+
+			<img src="{{ brick.Url }}" alt="Here shoulb be the image!" style="max-height: 200px;"/>
+			<div> {{ iTicketCount }} @ {{ sTimestamp }}</div>
+		</a>
+	{% endblock %}
+</div>

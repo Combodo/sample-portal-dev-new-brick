@@ -1,0 +1,1 @@
+Sample to show which files are necessary to create a new brick for the portal.
