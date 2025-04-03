@@ -2,7 +2,7 @@
 
 This repo is no longer maintained, all the source code is still available as history.
 
-It was made as a customization example for iTop version 2.3.
+It was made as a customization example for iTop version 2.4.
 
 It's still monitored so if you experience some error please open an issue.
 
