@@ -1,0 +1,8 @@
+README.md
+.editorconfig
+doc
+tests
+assets/img/.gitkeep
+src/Hook/.gitkeep
+src/Model/.gitkeep
+src/NoNamespace/.gitkeep

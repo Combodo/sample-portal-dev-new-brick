@@ -1,0 +1,10 @@
+{# Extends `tile` template from PortalBrick class definition #}
+{% extends template('tile', 'Combodo\\iTop\\Portal\\Brick\\PortalBrick') %}
+
+{# Extra content of the tile #}
+{% block pTileExtraContent %}
+
+    <img src="{{ oBrick.Url }}" alt="Here should be the image!"/>
+    <div> {{ iTicketCount }} @ {{ sTimestamp }}</div>
+
+{% endblock %}

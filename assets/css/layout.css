@@ -1,0 +1,29 @@
+/*
+ * @copyright   Copyright (C) 2010-2026 Combodo SARL
+ * @license     http://opensource.org/licenses/AGPL-3.0
+ */
+
+/*
+ * CSS of the template page
+ */
+
+.sample-portal-dev-new-brick--image{
+	display: inline-block;
+	position: relative;
+}
+
+.sample-portal-dev-new-brick--image::after{
+	content: 'The brick image';
+	border: 1px solid #dd6c20;
+	background-color: #dd6c20;
+	color: white;
+	border-radius: 5px;
+	padding: 2px 5px;
+	position: absolute;
+	bottom: -15px;
+	right: -15px;
+	opacity: 0.8;
+}
+
+
+
