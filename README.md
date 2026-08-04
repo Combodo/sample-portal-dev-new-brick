@@ -1,6 +1,57 @@
 # Sample portal dev new brick
 
-Sample to show which files are necessary to create a new brick for the portal. 
+Sample to show which files are necessary to create a new brick for the portal.\
+This sample declare a new kind of brick that display an image.
+
+## Home Page
+
+![home](doc/home.png)
+
+## Tile
+
+The brick tile is the content displayed in the portal home page.\
+The tile is a link to the brick page.
+
+![home](doc/brick.png)
+
+## Page
+
+The brick page is the content displayed when clicking on the tile.
+
+![home](doc/page.png)
+
+## 3.3 Consideration
+
+New coding guidelines have been introduced in iTop 3.3, this sample is following those guidelines.
+
+### Router
+
+A router PHP file must be declared in the module.<extension>.php file to handle the brick.\
+This file allow registration of controller classes and routes.
+
+![home](doc/router.png)
+
+### Tile Template
+
+1. **pTileDecoration** decoration of the brick usually used to display an image, but can be used to display any HTML content.
+2. **pTileTitle** title of the brick
+3. **pTileDescription** description of the brick
+4. **pTileExtraContent** extra content of the brick, can be used to display any HTML content.
+5. **pTileActions** actions of the brick, usually used to display buttons.
+
+![home](doc/tile.png)
+
+###  Brick Controller Class
+
+You need to inject services in the controller constructor to use them in the controller methods.
+
+![home](doc/injection.png)
+
+###  Brick Class
+
+You need to declare your brick templates in the the template register to allow the brick template to be overridden.
+
+![home](doc/register.png)
 
 # New extension guidelines
 [html version](https://wiki.combodo.com/doku.php?id=combodo:dev:new_extension)
