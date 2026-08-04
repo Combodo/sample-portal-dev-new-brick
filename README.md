@@ -112,7 +112,7 @@ If your module contains a datamodel.*module*.xml, then you must:
 
 How to choose a namespace for your PHP classes? (you have an example in the src example classes)
 
-    Combodo\iTop\SamplePortalDevNewBrick\
+    Combodo\iTop\Portal\
 
 ### Autoloader
 
