@@ -1,0 +1,16 @@
+{
+  "config": {
+    "classmap-authoritative": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Combodo\\iTop\\Portal\\": "src/"
+    }
+  },
+  "name": "combodo/sample-portal-dev-new-brick",
+  "type": "itop-extension",
+  "description": "Sample to show which files are necessary to create a new brick for the portal",
+  "require": {
+    "composer-runtime-api": "^2.0"
+  }
+}

@@ -1,0 +1,20 @@
+{# Extends `tile` template from PortalBrick class definition #}
+{% extends template('tile', 'Combodo\\iTop\\Portal\\Brick\\PortalBrick') %}
+
+{# Tile actions #}
+{% block pTileActions %}
+    <button class="btn btn-default alternative ipb-button--prev">
+        <span class="fas fa-chevron-left"></span>
+    </button>
+    <button class="btn btn-default alternative ipb-button--next">
+        <span class="fas fa-chevron-right"></span>
+    </button>
+{% endblock %}
+
+{# Extra content of the tile #}
+{% block pTileExtraContent %}
+
+    <img src="{{ oBrick.Url }}" alt="Here should be the image!"/>
+    <div> {{ iTicketCount }} @ {{ sTimestamp }}</div>
+
+{% endblock %}

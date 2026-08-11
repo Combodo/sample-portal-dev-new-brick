@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.4">
-	<module_designs>
-		<module_design id="itop-portal">
-			<bricks>
-				<brick id="image-chat" xsi:type="Combodo\Formation\Brick\ImageBrick" _delta="define">
-					<rank>
-						<default>1</default>
-					</rank>
-					<width>12</width>
-					<title>
-						<default>Image de chat !</default>
-					</title>
-					<description>OSEF</description>
-					<decoration_class>
-						<default>fc fc-ongoing-request fc-2x</default>
-					</decoration_class>
-					<url><![CDATA[https://i1.wp.com/digiday.com/wp-content/uploads/2014/01/tumblr_lj0wls8poh1qb9bjho1_400.gif?resize=400%2C400&ssl=1]]></url>
-				</brick>
-			</bricks>
-		</module_design>
-	</module_designs>
+<itop_design version="3.0">
+  <module_designs>
+    <module_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="itop-portal" xsi:type="portal" _delta="if_exists">
+      <bricks>
+        <brick id="image-chat" xsi:type="Combodo\iTop\Portal\Brick\ImageBrick" _delta="define">
+          <rank>
+            <default>10</default>
+          </rank>
+          <width>300px</width>
+          <title>
+            <default>Portal:ImageBrick</default>
+          </title>
+          <description>Portal:ImageBrick:Description</description>
+          <decoration_class>
+            <default>fas fa-image</default>
+          </decoration_class>
+          <url><![CDATA[https://combodo.com/wp-content/uploads/2025/04/logo-itop-black-baseline.svg]]></url>
+        </brick>
+      </bricks>
+    </module_design>
+  </module_designs>
 </itop_design>

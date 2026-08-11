@@ -1,0 +1,17 @@
+{# Extends `tile` template from PortalBrick class definition #}
+{% extends template('page', 'Combodo\\iTop\\Portal\\Brick\\AbstractBrick') %}
+
+{% block pPageExtraMetas %}
+    <link href="{{ app['combodo.modules.absolute_url'] ~ 'sample-portal-dev-new-brick/assets/css/layout.css'|add_itop_version }}" rel="stylesheet">
+    <script type="text/javascript" src="{{ app['combodo.modules.absolute_url'] ~ 'sample-portal-dev-new-brick/assets/js/layout.js'|add_itop_version }}"></script>
+{% endblock %}
+
+{# Title #}
+{% block pMainHeaderTitle %}{{ 'Portal:ImageBrick'|dict_s }}{% endblock %}
+
+{# Main content of the layout #}
+{% block pMainContentHolder %}
+    <div class="sample-portal-dev-new-brick--image">
+	    <img src="{{ sImageUrl }}" alt="Here should appear the brick image!"/>
+    </div>
+{% endblock %}
